@@ -11,50 +11,103 @@ body{
     grid-template-columns: repeat(4, 1fr);
     gap: 0.7rem;
     padding: 2rem 1rem;
+    color: rgb(225, 217, 217);
+    font-family: "Source Sans 3", sans-serif;
 }
 
 /* sections */
 
+.container{
+    background-color: rgb(34, 31, 31);
+    padding: 1rem;
+    border-radius: 0.5rem;
+}
+
 .introduction{
     grid-row: 1/4;
     grid-column: 1/4;
-    border: solid white;
     border-radius: 0.5rem;
 }
 
 .about-me{
- border: solid;
  grid-row: 1/6;   
 }
 
 .contact-information{
-    border: solid red;
     grid-row: 4/8;
 }
 
 .time-zone{
-    border: solid green;
     grid-row: 4/6;
     grid-column: 2/4;
 }
 
 .current-activity{
-    border: solid yellow;
     grid-row: 6/8;
     grid-column: 2/3;
 }
 
 .coutries-visited{
-    border: solid pink;
     grid-column: 3/4;
 }
 
 .blog-access{
-    border: solid green;
     grid-column: 4/5;
     grid-row: 6/8;
 }
 
 footer{
-    border: gold solid;
 }
+
+/*Introduction*/
+
+.introduction{
+    display: grid;
+    grid-template-columns: repeat(2, 60% 40%);
+}
+
+.my-introduction{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    line-height: 1;
+}
+
+.my-introduction .welcome-header{
+    color: gray;
+}
+
+.my-introduction p {
+    text-align: left;
+    width: 20rem;
+}
+
+.my-introduction p span{
+    font-weight: 700;
+}
+
+.my-introduction ul{
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+.my-introduction ul li{
+    border: solid red;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
+    box-shadow: 0.1rem 0.1rem 0.1rem red;
+}
+
+.my-introduction ul li i{
+    color: rgb(234, 228, 228);
+}
+
+.profile-picture{
+    width: 90%;
+    height: 90%;
+    border-radius: 0.5rem;
+    opacity: 0.5;
+}
+
