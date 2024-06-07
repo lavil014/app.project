@@ -21,6 +21,13 @@ body{
     background-color: rgb(34, 31, 31);
     padding: 1rem;
     border-radius: 0.5rem;
+    transition: 1s;
+}
+
+.container:hover{
+    border: solid 0.1rem rgb(239, 12, 12);
+    cursor: pointer;
+    padding: 1.5rem;
 }
 
 .introduction{
@@ -109,5 +116,9 @@ footer{
     height: 90%;
     border-radius: 0.5rem;
     opacity: 0.5;
+    transition: 1s;
 }
 
+.profile-picture:hover{
+    border: solid white 0.1rem;
+}
