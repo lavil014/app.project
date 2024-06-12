@@ -3,6 +3,15 @@
     margin: 0;
     box-sizing: border-box;
     color-scheme: dark;
+
+}
+
+:root{
+    --border-color:  rgb(239, 12, 12);
+    --light-gray: rgb(225, 217, 217);
+    --back-ground-color:  rgb(34, 31, 31);
+    --dark-gray:  rgb(128, 128, 128);
+    --white: rgb(255, 255, 255) ;
 }
 
 body{
@@ -10,23 +19,22 @@ body{
     grid-template-rows: repeat(8, 15%);
     grid-template-columns: repeat(4, 1fr);
     gap: 0.7rem;
-    padding: 2rem 1rem;
-    color: rgb(225, 217, 217);
+    padding: 4rem;
+    color: var(--light-gray);
     font-family: "Source Sans 3", sans-serif;
 }
 
 /* sections */
 
 .container{
-    background-color: rgb(34, 31, 31);
+    background-color: var(--back-ground-color);
     padding: 1rem;
     border-radius: 0.5rem;
     transition: 1s;
 }
 
 .container:hover{
-    border: solid 0.1rem rgb(239, 12, 12);
-    cursor: pointer;
+    border: solid 0.1rem var(--border-color);
     padding: 1.5rem;
 }
 
@@ -63,8 +71,6 @@ body{
     grid-row: 6/8;
 }
 
-footer{
-}
 
 /*Introduction*/
 
@@ -77,12 +83,12 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    padding: 1rem;
+    padding: 2rem;
     line-height: 1;
 }
 
 .my-introduction .welcome-header{
-    color: gray;
+    color: var(--dark-gray);
 }
 
 .my-introduction p {
@@ -95,30 +101,131 @@ footer{
 }
 
 .my-introduction ul{
+    margin-top: 5rem;
     list-style: none;
     display: flex;
     gap: 1rem;
 }
 
 .my-introduction ul li{
-    border: solid red;
+    border: solid var(--border-color);
     border-radius: 0.5rem;
     padding: 0.5rem 1rem;
-    box-shadow: 0.1rem 0.1rem 0.1rem red;
+    box-shadow: 0.1rem 0.1rem 0.1rem var(--border-color);
+}
+
+.my-introduction li i:hover{
+    color: var(--border-color);
 }
 
 .my-introduction ul li i{
-    color: rgb(234, 228, 228);
+    color: var(--light-gray);
+    transition: 1s;
 }
 
 .profile-picture{
     width: 90%;
-    height: 90%;
+    height: 80%;
     border-radius: 0.5rem;
     opacity: 0.5;
     transition: 1s;
 }
 
 .profile-picture:hover{
-    border: solid white 0.1rem;
+    border: solid var(--white) 0.1rem;
+}
+
+/*Contact information*/
+
+.contact-information{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.contact-information span{
+    color: var(--dark-gray);
+}
+.contact-information ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.contact-information ul li a:hover{
+    text-decoration: underline;
+    font-size: 1.2rem;
+    transition: 0.5s;
+    cursor: pointer;
+    color: var(--dark-gray);
+}
+
+/* Time container*/
+
+.time-zone{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 3rem;
+    justify-content: center;
+}
+
+
+.time-zone :first-child{
+    color: var(--dark-gray);
+}
+
+.time-zone #current-time {
+    font-size: 3rem;
+    margin-left: 2rem;
+    font-weight: 300;
+}
+
+/*About me*/
+
+.about-me{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: left;
+}
+
+.about-me ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+.about-me ul li i{
+    margin-right: 0.7rem;
+}
+
+/*Current activity*/
+
+.current-activity{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: start;
+    padding: 3rem 2rem;
+}
+
+.current-activity :nth-child(2){
+    color: var(--dark-gray);
+}
+
+/*Footer*/
+
+footer{
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer .coding-languages{
+    color: red;
 }
