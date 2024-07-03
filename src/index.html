@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/src/output.css">
+  <script src="https://kit.fontawesome.com/e2e9003abd.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <title>Document</title>
+</head>
+<body class="p-3 bg-black sm:text-small md:text-medium lg:text-large">
+
+  <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-3 h-[100dvh]">
+    <main class=" introduction container md:col-span-3 lg:col-span-3">    
+      <div class="my-introduction">
+        <span class="text-gray-500">welcome</span>
+        <h1 class="">Hi. I'm <span class="font-extrabold">Luis Aviles,</span> a frontend developer with strong focus on the user expirience, animations and micro interactions</h1>
+        <ul>
+          <li class="social-media-icon"><a href=""><i class="fa-brands fa-github"></i></a></li>
+          <li class="social-media-icon"><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+          <li class="social-media-icon"><a href=""><i class="fa-brands fa-discord"></i></a></li>
+          <li class="social-media-icon"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+        </ul>
+      </div>
+      <img class="profile-picture" src="/src/img/Avatar2.jpeg" alt="">
+    </main>
+    <aside class=" about-me container row-span-4 lg:row-span-2"> 
+      
+    <h2>About me</h2>
+    <p>Hi, I'm Luis, a front-end software developer from Nicaragua.
+      My primary tools of choice includes:</p>
+    <ul class="flex flex-col gap-1">
+      <li><i class="fa-brands fa-html5"></i>HTML</li>
+      <li><i class="fa-brands fa-css3-alt"></i>CSS</li>
+      <li><i class="fa-brands fa-bootstrap"></i> Boostrap</li>
+      <li><i class="fa-brands fa-js"></i>Javascript</li>
+      <li><i class="fa-brands fa-react"></i>React</li>
+      <li><i class="fa-brands fa-node"></i>Nodejs</li>
+    </ul>
+    <p>Beyond coding, I'm passionate about design, illustration, animation and 3D modelling and traveling. An unusual hobby of mine is collecting vintage passports, they're interesting pieces of history to me.
+
+      While I have some preferred tools, I always choose the best one for the job, even if it's not on my usual list. My goal is to find the right solution for each project.</p>
+    </aside>
+    <section class=" contact-information container row-span-2 lg:row-span-4 "> 
+      <h2>Let's start working together!</h2>
+      <ul>
+        <span class="text-gray-500">Contact Details</span>
+        <li>luisaviles7@gmail.com</li>
+        <li>Nicaragua</li>
+      </ul>
+      <ul>
+        <span class="text-gray-500">Socials</span>
+        <li><a>Instagram</a></li>
+        <li><a>Linkedin</a></li>
+        <li><a>Discord</a></li>
+        <li><a>Github</a></li>
+      </ul></section>
+    <section class=" time-zone container"> 
+      <span>Time Zone</span>
+      <span id="current-time">Tome Zone should reflect here , CET</span>
+    </section>
+    <section class="current-activity container"> 
+      <h3>Now</h3>
+      <p>What's that ?</p>
+      <p>Currently working as freelancer</p>
+    </section>
+    <section class="container">
+      <h2>Places I have visited</h2>
+    </section>
+    <section class="container row-span-2">  
+      <h2>Blog</h2>
+      <a href=""><i class="fa-solid fa-blog"></i></a>
+  </section>
+    <footer class="container">
+      <p>&#169 <span id = "display-year" ></span> - Developed with &#129392 using <span class="coding-languages"> HTML, CSS & Js</span> by Luis Aviles</p>
+    </footer>
+  </div>
+  <script src="/src/interactive-time.js"></script>
+</body>
+</html>
+
