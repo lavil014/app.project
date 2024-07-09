@@ -180,3 +180,21 @@ footer{
 footer .coding-languages{
   color: red;
 }
+
+/* mobile version*/
+
+@media (width < 430px){
+
+  .introduction{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/src/img/Avatar2.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .profile-picture{
+    display: none;
+  }
+}
