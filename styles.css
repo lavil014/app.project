@@ -134,6 +134,16 @@ body{
   font-weight: 300;
 }
 
+.places-to-visit{
+  transition: 1s;
+  line-height: 1;
+}
+
+.places-to-visit:hover{
+  color: red;
+  font-weight: 700;
+}
+
 /*About me*/
 
 .about-me{
