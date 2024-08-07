@@ -8,10 +8,15 @@ Welcome to my personal portfolio! I'm Luis Aviles, a web development student wit
 To navigate through my portfolio, here are some key sections you can explore:
 
 Home: An introduction to who I am and what drives me.
+
 About: A more detailed background on my experience, skills, and achievements.
+
 Projects: A showcase of my notable projects with descriptions and links to live versions or repositories.
+
 Skills: A list of my technical and soft skills.
+
 Blog: Articles and insights on topics related to my field of expertise.
+
 Contact: How you can get in touch with me for collaborations, inquiries, or just to say hello.
 
 🔍 Features
