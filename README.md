@@ -29,9 +29,9 @@ Project Details: Each project includes a description, technologies used, and lin
 🛠️ Technologies Used
 Here are some of the key technologies and tools I've used to build this portfolio:
 
-Frontend: HTML, CSS, JavaScript, React (or any frameworks/libraries you use)
+Frontend: HTML, CSS, JavaScript, Tailwind , Bootstrap.
 Backend: Node.js.
-Deployment: GitHub Pages, Netlify, Vercel.
+Deployment: GitHub Pages, Netlify.
 
 ✉️ Contact Me
 Feel free to reach out to me via the following channels:
